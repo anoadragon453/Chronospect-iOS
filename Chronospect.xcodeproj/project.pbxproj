@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		495CED871929513E00315CF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 495CED861929513E00315CF7 /* Foundation.framework */; };
+		495CED891929513E00315CF7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 495CED881929513E00315CF7 /* CoreGraphics.framework */; };
+		495CED8B1929513E00315CF7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 495CED8A1929513E00315CF7 /* UIKit.framework */; };
+		495CED911929513E00315CF7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 495CED8F1929513E00315CF7 /* InfoPlist.strings */; };
+		495CED931929513E00315CF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 495CED921929513E00315CF7 /* main.m */; };
+		495CED971929513E00315CF7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 495CED961929513E00315CF7 /* AppDelegate.m */; };
+		495CED9A1929513F00315CF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495CED981929513F00315CF7 /* Main.storyboard */; };
+		495CED9D1929513F00315CF7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495CED9C1929513F00315CF7 /* ViewController.m */; };
+		495CED9F1929513F00315CF7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 495CED9E1929513F00315CF7 /* Images.xcassets */; };
+		495CEDA61929513F00315CF7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 495CEDA51929513F00315CF7 /* XCTest.framework */; };
+		495CEDA71929513F00315CF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 495CED861929513E00315CF7 /* Foundation.framework */; };
+		495CEDA81929513F00315CF7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 495CED8A1929513E00315CF7 /* UIKit.framework */; };
+		495CEDB01929513F00315CF7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 495CEDAE1929513F00315CF7 /* InfoPlist.strings */; };
+		495CEDB21929513F00315CF7 /* ChronospectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 495CEDB11929513F00315CF7 /* ChronospectTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		495CEDA91929513F00315CF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 495CED7B1929513E00315CF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 495CED821929513E00315CF7;
+			remoteInfo = Chronospect;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		495CED831929513E00315CF7 /* Chronospect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chronospect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		495CED861929513E00315CF7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		495CED881929513E00315CF7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		495CED8A1929513E00315CF7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		495CED8E1929513E00315CF7 /* Chronospect-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Chronospect-Info.plist"; sourceTree = "<group>"; };
+		495CED901929513E00315CF7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		495CED921929513E00315CF7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		495CED941929513E00315CF7 /* Chronospect-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Chronospect-Prefix.pch"; sourceTree = "<group>"; };
+		495CED951929513E00315CF7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		495CED961929513E00315CF7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		495CED991929513F00315CF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		495CED9B1929513F00315CF7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		495CED9C1929513F00315CF7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		495CED9E1929513F00315CF7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		495CEDA41929513F00315CF7 /* ChronospectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChronospectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		495CEDA51929513F00315CF7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		495CEDAD1929513F00315CF7 /* ChronospectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ChronospectTests-Info.plist"; sourceTree = "<group>"; };
+		495CEDAF1929513F00315CF7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		495CEDB11929513F00315CF7 /* ChronospectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChronospectTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		495CED801929513E00315CF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				495CED891929513E00315CF7 /* CoreGraphics.framework in Frameworks */,
+				495CED8B1929513E00315CF7 /* UIKit.framework in Frameworks */,
+				495CED871929513E00315CF7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		495CEDA11929513F00315CF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				495CEDA61929513F00315CF7 /* XCTest.framework in Frameworks */,
+				495CEDA81929513F00315CF7 /* UIKit.framework in Frameworks */,
+				495CEDA71929513F00315CF7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		495CED7A1929513E00315CF7 = {
+			isa = PBXGroup;
+			children = (
+				495CED8C1929513E00315CF7 /* Chronospect */,
+				495CEDAB1929513F00315CF7 /* ChronospectTests */,
+				495CED851929513E00315CF7 /* Frameworks */,
+				495CED841929513E00315CF7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		495CED841929513E00315CF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				495CED831929513E00315CF7 /* Chronospect.app */,
+				495CEDA41929513F00315CF7 /* ChronospectTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		495CED851929513E00315CF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				495CED861929513E00315CF7 /* Foundation.framework */,
+				495CED881929513E00315CF7 /* CoreGraphics.framework */,
+				495CED8A1929513E00315CF7 /* UIKit.framework */,
+				495CEDA51929513F00315CF7 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		495CED8C1929513E00315CF7 /* Chronospect */ = {
+			isa = PBXGroup;
+			children = (
+				495CED951929513E00315CF7 /* AppDelegate.h */,
+				495CED961929513E00315CF7 /* AppDelegate.m */,
+				495CED981929513F00315CF7 /* Main.storyboard */,
+				495CED9B1929513F00315CF7 /* ViewController.h */,
+				495CED9C1929513F00315CF7 /* ViewController.m */,
+				495CED9E1929513F00315CF7 /* Images.xcassets */,
+				495CED8D1929513E00315CF7 /* Supporting Files */,
+			);
+			path = Chronospect;
+			sourceTree = "<group>";
+		};
+		495CED8D1929513E00315CF7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				495CED8E1929513E00315CF7 /* Chronospect-Info.plist */,
+				495CED8F1929513E00315CF7 /* InfoPlist.strings */,
+				495CED921929513E00315CF7 /* main.m */,
+				495CED941929513E00315CF7 /* Chronospect-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		495CEDAB1929513F00315CF7 /* ChronospectTests */ = {
+			isa = PBXGroup;
+			children = (
+				495CEDB11929513F00315CF7 /* ChronospectTests.m */,
+				495CEDAC1929513F00315CF7 /* Supporting Files */,
+			);
+			path = ChronospectTests;
+			sourceTree = "<group>";
+		};
+		495CEDAC1929513F00315CF7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				495CEDAD1929513F00315CF7 /* ChronospectTests-Info.plist */,
+				495CEDAE1929513F00315CF7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		495CED821929513E00315CF7 /* Chronospect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 495CEDB51929513F00315CF7 /* Build configuration list for PBXNativeTarget "Chronospect" */;
+			buildPhases = (
+				495CED7F1929513E00315CF7 /* Sources */,
+				495CED801929513E00315CF7 /* Frameworks */,
+				495CED811929513E00315CF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Chronospect;
+			productName = Chronospect;
+			productReference = 495CED831929513E00315CF7 /* Chronospect.app */;
+			productType = "com.apple.product-type.application";
+		};
+		495CEDA31929513F00315CF7 /* ChronospectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 495CEDB81929513F00315CF7 /* Build configuration list for PBXNativeTarget "ChronospectTests" */;
+			buildPhases = (
+				495CEDA01929513F00315CF7 /* Sources */,
+				495CEDA11929513F00315CF7 /* Frameworks */,
+				495CEDA21929513F00315CF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				495CEDAA1929513F00315CF7 /* PBXTargetDependency */,
+			);
+			name = ChronospectTests;
+			productName = ChronospectTests;
+			productReference = 495CEDA41929513F00315CF7 /* ChronospectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		495CED7B1929513E00315CF7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Andrew Morgan";
+				TargetAttributes = {
+					495CEDA31929513F00315CF7 = {
+						TestTargetID = 495CED821929513E00315CF7;
+					};
+				};
+			};
+			buildConfigurationList = 495CED7E1929513E00315CF7 /* Build configuration list for PBXProject "Chronospect" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 495CED7A1929513E00315CF7;
+			productRefGroup = 495CED841929513E00315CF7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				495CED821929513E00315CF7 /* Chronospect */,
+				495CEDA31929513F00315CF7 /* ChronospectTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		495CED811929513E00315CF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				495CED9F1929513F00315CF7 /* Images.xcassets in Resources */,
+				495CED911929513E00315CF7 /* InfoPlist.strings in Resources */,
+				495CED9A1929513F00315CF7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		495CEDA21929513F00315CF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				495CEDB01929513F00315CF7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		495CED7F1929513E00315CF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				495CED9D1929513F00315CF7 /* ViewController.m in Sources */,
+				495CED971929513E00315CF7 /* AppDelegate.m in Sources */,
+				495CED931929513E00315CF7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		495CEDA01929513F00315CF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				495CEDB21929513F00315CF7 /* ChronospectTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		495CEDAA1929513F00315CF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 495CED821929513E00315CF7 /* Chronospect */;
+			targetProxy = 495CEDA91929513F00315CF7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		495CED8F1929513E00315CF7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				495CED901929513E00315CF7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		495CED981929513F00315CF7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				495CED991929513F00315CF7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		495CEDAE1929513F00315CF7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				495CEDAF1929513F00315CF7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		495CEDB31929513F00315CF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		495CEDB41929513F00315CF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		495CEDB61929513F00315CF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Chronospect/Chronospect-Prefix.pch";
+				INFOPLIST_FILE = "Chronospect/Chronospect-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		495CEDB71929513F00315CF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Chronospect/Chronospect-Prefix.pch";
+				INFOPLIST_FILE = "Chronospect/Chronospect-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		495CEDB91929513F00315CF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Chronospect.app/Chronospect";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Chronospect/Chronospect-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ChronospectTests/ChronospectTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		495CEDBA1929513F00315CF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Chronospect.app/Chronospect";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Chronospect/Chronospect-Prefix.pch";
+				INFOPLIST_FILE = "ChronospectTests/ChronospectTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		495CED7E1929513E00315CF7 /* Build configuration list for PBXProject "Chronospect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				495CEDB31929513F00315CF7 /* Debug */,
+				495CEDB41929513F00315CF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		495CEDB51929513F00315CF7 /* Build configuration list for PBXNativeTarget "Chronospect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				495CEDB61929513F00315CF7 /* Debug */,
+				495CEDB71929513F00315CF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		495CEDB81929513F00315CF7 /* Build configuration list for PBXNativeTarget "ChronospectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				495CEDB91929513F00315CF7 /* Debug */,
+				495CEDBA1929513F00315CF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 495CED7B1929513E00315CF7 /* Project object */;
+}
