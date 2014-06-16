@@ -1,0 +1,5 @@
+#include "Pods-AMSlideOutController.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/BuildHeaders" "${PODS_ROOT}/BuildHeaders/AMSlideOutController" "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/AMSlideOutController"
+OTHER_LDFLAGS = -ObjC ${PODS_AMSLIDEOUTCONTROLLER_OTHER_LDFLAGS}
+PODS_ROOT = ${SRCROOT}

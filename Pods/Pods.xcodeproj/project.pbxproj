@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06925882385D4717855EB719 /* PPRevealSideViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D76D19B138DE48A2949DC368 /* PPRevealSideViewController.h */; };
+		135C7F4FFFAC4F64B812CF34 /* Pods-Chronospect-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F874E6242C24330BB982B93 /* Pods-Chronospect-dummy.m */; };
+		2E2FC1BAC86F4224A2EAB495 /* libPods-Chronospect-PPRevealSideViewController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C36AB5C532447CDBB39D7D9 /* libPods-Chronospect-PPRevealSideViewController.a */; };
+		3AF63067DDA24870AF654AA8 /* Pods-Chronospect-PPRevealSideViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C25E4C7C533D425E8CD310CC /* Pods-Chronospect-PPRevealSideViewController-dummy.m */; };
+		45149F1BB2AF4E0FA5A85F08 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D65FE7D5941475F85A5429A /* QuartzCore.framework */; };
+		510739AC14224426B9416ACA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B7DB14354744A9B53116DA /* Foundation.framework */; };
+		AC07DEBD182E4A4DBD316F89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B7DB14354744A9B53116DA /* Foundation.framework */; };
+		B7F4C8A9F8DE4555B966BF0B /* PPRevealSideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1A3C4189A84FA9807AFE34 /* PPRevealSideViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5AFAF3784E8043619A775999 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBC78F5C9CAA451093F260BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98175B685D324143BE260DDF;
+			remoteInfo = "Pods-Chronospect-PPRevealSideViewController";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0558E8F5934743A19B6DAA31 /* Pods-Chronospect-PPRevealSideViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Chronospect-PPRevealSideViewController-prefix.pch"; sourceTree = "<group>"; };
+		0944C2E144AD4D7E9E5383CF /* Pods-Chronospect-PPRevealSideViewController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Chronospect-PPRevealSideViewController-Private.xcconfig"; sourceTree = "<group>"; };
+		1F874E6242C24330BB982B93 /* Pods-Chronospect-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Chronospect-dummy.m"; sourceTree = "<group>"; };
+		49CA29B7941B469DA2C91A68 /* Pods-Chronospect-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Chronospect-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4A2CC003B6E54F91A56A6E6D /* Pods-Chronospect.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Chronospect.xcconfig"; sourceTree = "<group>"; };
+		578E7460EC2949488914B71E /* libPods-Chronospect.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Chronospect.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E8D1D77355F42C59CDA30F7 /* Pods-Chronospect-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Chronospect-environment.h"; sourceTree = "<group>"; };
+		6C36AB5C532447CDBB39D7D9 /* libPods-Chronospect-PPRevealSideViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Chronospect-PPRevealSideViewController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B455F520BB44FF59F2C64C9 /* Pods-Chronospect-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Chronospect-acknowledgements.plist"; sourceTree = "<group>"; };
+		8D65FE7D5941475F85A5429A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		94AD225E61CA44329EE728CD /* Pods-Chronospect-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Chronospect-resources.sh"; sourceTree = "<group>"; };
+		A5916ABA2DBA4EB8B82738E2 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B1B3025BDDE1458583BE4208 /* Pods-Chronospect-PPRevealSideViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Chronospect-PPRevealSideViewController.xcconfig"; sourceTree = "<group>"; };
+		B5B7DB14354744A9B53116DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C25E4C7C533D425E8CD310CC /* Pods-Chronospect-PPRevealSideViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Chronospect-PPRevealSideViewController-dummy.m"; sourceTree = "<group>"; };
+		D76D19B138DE48A2949DC368 /* PPRevealSideViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PPRevealSideViewController.h; path = PPRevealSideViewController/PPRevealSideviewController/PPRevealSideViewController.h; sourceTree = "<group>"; };
+		EA1A3C4189A84FA9807AFE34 /* PPRevealSideViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PPRevealSideViewController.m; path = PPRevealSideViewController/PPRevealSideviewController/PPRevealSideViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ABF946044B6E4031835B3550 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC07DEBD182E4A4DBD316F89 /* Foundation.framework in Frameworks */,
+				2E2FC1BAC86F4224A2EAB495 /* libPods-Chronospect-PPRevealSideViewController.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1DDD572A9C64B998566CD76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				510739AC14224426B9416ACA /* Foundation.framework in Frameworks */,
+				45149F1BB2AF4E0FA5A85F08 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		069DEC4E338F451293485D6E /* Pods-Chronospect */ = {
+			isa = PBXGroup;
+			children = (
+				4A2CC003B6E54F91A56A6E6D /* Pods-Chronospect.xcconfig */,
+				49CA29B7941B469DA2C91A68 /* Pods-Chronospect-acknowledgements.markdown */,
+				8B455F520BB44FF59F2C64C9 /* Pods-Chronospect-acknowledgements.plist */,
+				1F874E6242C24330BB982B93 /* Pods-Chronospect-dummy.m */,
+				5E8D1D77355F42C59CDA30F7 /* Pods-Chronospect-environment.h */,
+				94AD225E61CA44329EE728CD /* Pods-Chronospect-resources.sh */,
+			);
+			name = "Pods-Chronospect";
+			sourceTree = "<group>";
+		};
+		08C70B7D413A41F59D9F32CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B27442D088DA46ADAD316B33 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1F7E0496E9234BA6AC9F07B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				578E7460EC2949488914B71E /* libPods-Chronospect.a */,
+				6C36AB5C532447CDBB39D7D9 /* libPods-Chronospect-PPRevealSideViewController.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3AE330BE9F7F48A388810FFA /* PPRevealSideViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D76D19B138DE48A2949DC368 /* PPRevealSideViewController.h */,
+				EA1A3C4189A84FA9807AFE34 /* PPRevealSideViewController.m */,
+				D1EDF0DF2F9E4104B0F754BD /* Support Files */,
+			);
+			path = PPRevealSideViewController;
+			sourceTree = "<group>";
+		};
+		4295468B94924799BA1F6B59 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				069DEC4E338F451293485D6E /* Pods-Chronospect */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		81D6EC36A55F4A679EDB4F54 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3AE330BE9F7F48A388810FFA /* PPRevealSideViewController */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B27442D088DA46ADAD316B33 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B5B7DB14354744A9B53116DA /* Foundation.framework */,
+				8D65FE7D5941475F85A5429A /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D1EDF0DF2F9E4104B0F754BD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1B3025BDDE1458583BE4208 /* Pods-Chronospect-PPRevealSideViewController.xcconfig */,
+				0944C2E144AD4D7E9E5383CF /* Pods-Chronospect-PPRevealSideViewController-Private.xcconfig */,
+				C25E4C7C533D425E8CD310CC /* Pods-Chronospect-PPRevealSideViewController-dummy.m */,
+				0558E8F5934743A19B6DAA31 /* Pods-Chronospect-PPRevealSideViewController-prefix.pch */,
+			);
+			name = "Support Files";
+			sourceTree = SOURCE_ROOT;
+		};
+		E26DF11779484886BEE94DC4 = {
+			isa = PBXGroup;
+			children = (
+				A5916ABA2DBA4EB8B82738E2 /* Podfile */,
+				08C70B7D413A41F59D9F32CF /* Frameworks */,
+				81D6EC36A55F4A679EDB4F54 /* Pods */,
+				1F7E0496E9234BA6AC9F07B5 /* Products */,
+				4295468B94924799BA1F6B59 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1BC628041E2E48388D9C13B7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06925882385D4717855EB719 /* PPRevealSideViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3B3A8041F34A44A3B2E9BE85 /* Pods-Chronospect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38D2D23FAE9D4886A5EC8C2A /* Build configuration list for PBXNativeTarget "Pods-Chronospect" */;
+			buildPhases = (
+				49CC7B0BDC9C45338CC5FEA8 /* Sources */,
+				ABF946044B6E4031835B3550 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E221AAC279D483D8D28A78D /* PBXTargetDependency */,
+			);
+			name = "Pods-Chronospect";
+			productName = "Pods-Chronospect";
+			productReference = 578E7460EC2949488914B71E /* libPods-Chronospect.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		98175B685D324143BE260DDF /* Pods-Chronospect-PPRevealSideViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D34303277DD64C83B91B1D60 /* Build configuration list for PBXNativeTarget "Pods-Chronospect-PPRevealSideViewController" */;
+			buildPhases = (
+				9662484E3A1943AE8DDF3EFE /* Sources */,
+				C1DDD572A9C64B998566CD76 /* Frameworks */,
+				1BC628041E2E48388D9C13B7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Chronospect-PPRevealSideViewController";
+			productName = "Pods-Chronospect-PPRevealSideViewController";
+			productReference = 6C36AB5C532447CDBB39D7D9 /* libPods-Chronospect-PPRevealSideViewController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BBC78F5C9CAA451093F260BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 095B3BE83FF542D99104AD0D /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E26DF11779484886BEE94DC4;
+			productRefGroup = 1F7E0496E9234BA6AC9F07B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B3A8041F34A44A3B2E9BE85 /* Pods-Chronospect */,
+				98175B685D324143BE260DDF /* Pods-Chronospect-PPRevealSideViewController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49CC7B0BDC9C45338CC5FEA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				135C7F4FFFAC4F64B812CF34 /* Pods-Chronospect-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9662484E3A1943AE8DDF3EFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7F4C8A9F8DE4555B966BF0B /* PPRevealSideViewController.m in Sources */,
+				3AF63067DDA24870AF654AA8 /* Pods-Chronospect-PPRevealSideViewController-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1E221AAC279D483D8D28A78D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98175B685D324143BE260DDF /* Pods-Chronospect-PPRevealSideViewController */;
+			targetProxy = 5AFAF3784E8043619A775999 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0CDA27B5EC694E7D9B26E11F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0944C2E144AD4D7E9E5383CF /* Pods-Chronospect-PPRevealSideViewController-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-Chronospect-PPRevealSideViewController-prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		32C9653DF8D94F308916E429 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4560F58FAAB4450898AB4B37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A2CC003B6E54F91A56A6E6D /* Pods-Chronospect.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4E72892320734E6CA3DCDB5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		83B18D8FFF054C6391463D9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0944C2E144AD4D7E9E5383CF /* Pods-Chronospect-PPRevealSideViewController-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-Chronospect-PPRevealSideViewController-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E0109DBC301C44F7AD2CCA27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A2CC003B6E54F91A56A6E6D /* Pods-Chronospect.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		095B3BE83FF542D99104AD0D /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E72892320734E6CA3DCDB5B /* Debug */,
+				32C9653DF8D94F308916E429 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38D2D23FAE9D4886A5EC8C2A /* Build configuration list for PBXNativeTarget "Pods-Chronospect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0109DBC301C44F7AD2CCA27 /* Debug */,
+				4560F58FAAB4450898AB4B37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D34303277DD64C83B91B1D60 /* Build configuration list for PBXNativeTarget "Pods-Chronospect-PPRevealSideViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83B18D8FFF054C6391463D9B /* Debug */,
+				0CDA27B5EC694E7D9B26E11F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BBC78F5C9CAA451093F260BE /* Project object */;
+}

@@ -7,12 +7,22 @@
 //
 
 #import "AppDelegate.h"
+#import <Parse/Parse.h>
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    // Parse first time setup
+    [Parse setApplicationId:@"0gCQQR83RgCSi6X3nhAUioezmGmm2XcJnhcUIZcc"
+                  clientKey:@"Pz3l6w8EKIyP8CsHrWXRif1MeifQ0Clhp6SMZuxD"];
+    
+    // Track app launches
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
+    // Google Maps API Key
+    [GMSServices provideAPIKey:@"AIzaSyD01ZmhTBcCdJEX9THD4PajMDIr4KRJFo0"];
+    
     return YES;
 }
 							
