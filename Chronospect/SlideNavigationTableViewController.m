@@ -8,9 +8,12 @@
 
 #import "SlideNavigationTableViewController.h"
 #import "SlideNavigationTableViewCell.h"
-#import "MainNavigatorViewController.h"
 #import <PPRevealSideViewController/PPRevealSideViewController.h>
 #import "RegisterViewController.h"
+#import "SWRevealViewController.h"
+
+// Classes to segue to
+#import "WallViewController.h"
 
 @interface SlideNavigationTableViewController ()
 
@@ -18,6 +21,7 @@
 
 NSArray *cellTitles;
 NSArray *cellImages;
+NSArray *cellIdentifiers;
 
 @implementation SlideNavigationTableViewController
 
@@ -34,14 +38,12 @@ NSArray *cellImages;
 {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    // Set the background and seperator colors
+    self.view.backgroundColor = [UIColor colorWithWhite:0.2f alpha:1.0f];
+    self.tableView.backgroundColor = [UIColor colorWithWhite:0.2f alpha:1.0f];
+    self.tableView.separatorColor = [UIColor colorWithWhite:0.15f alpha:0.2f];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
-    cellTitles = [[NSArray alloc] initWithObjects:@"Find Friends", @"Invites", @"Wall", @"Getting Started", @"My Profile", @"Account", @"Log out", nil];
-    cellImages = [[NSArray alloc] initWithObjects:@"friends.png", @"invites.png", @"wall.png", @"info.png", @"user-light.png", @"account.png", @"logout.png", nil];
+    cellIdentifiers = [[NSArray alloc] initWithObjects:@"title", @"wall", @"invites", @"friends", @"empty", @"my profile", @"account settings", @"log out", nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -56,35 +58,27 @@ NSArray *cellImages;
 {
 
     // Return the number of sections.
-    return 2;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-
     // Return the number of rows in the section.
-    if (section==0) {
-        return 4;
-    }else{
-        return 3;
-    }
+    return 8;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    SlideNavigationTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-    if (indexPath.section == 0) {
-        cell.cellLabel.text = [cellTitles objectAtIndex:indexPath.row];
-        cell.cellImage.image = [UIImage imageNamed:[cellImages objectAtIndex:indexPath.row]];
-    }else{
-        cell.cellLabel.text = [cellTitles objectAtIndex:indexPath.row + 4];
-        cell.cellImage.image = [UIImage imageNamed:[cellImages objectAtIndex:indexPath.row + 4]];
-    }
+    NSString *cellIdentifier = [cellIdentifiers objectAtIndex:indexPath.row];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+    
+    // Remove the selection color
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
     return cell;
 }
-
+/*
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Add Support for multiple sections
@@ -97,8 +91,9 @@ NSArray *cellImages;
     if ([[cellTitles objectAtIndex:row] isEqualToString:@"Log out"]) {
         
         // Log the user out.
+        [self.parentViewController dismissViewControllerAnimated:YES completion:nil];
         
-        [[MainNavigatorViewController revealSideViewController] popViewControllerAnimated:YES];
+        //[[MainNavigatorViewController revealSideViewController] popViewControllerAnimated:YES];
         //[self.navigationController popViewControllerAnimated:YES];
         return;
     }
@@ -108,46 +103,31 @@ NSArray *cellImages;
     
     UINavigationController *n = [[UINavigationController alloc] initWithRootViewController:c];
     [self.revealSideViewController popViewControllerWithNewCenterController:n animated:YES];
-}
+}*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+- (void) prepareForSegue: (UIStoryboardSegue *) segue sender: (id) sender
 {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+    // Set the title of navigation bar
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    UINavigationController *destViewController = (UINavigationController*)segue.destinationViewController;
+    destViewController.title = [[cellIdentifiers objectAtIndex:indexPath.row] capitalizedString];
+    
+    if ([segue.identifier isEqualToString:@"log out"]) {
+        // Log the user out
+    }
+    
+    if ( [segue isKindOfClass: [SWRevealViewControllerSegue class]] ) {
+        SWRevealViewControllerSegue *swSegue = (SWRevealViewControllerSegue*) segue;
+        
+        swSegue.performBlock = ^(SWRevealViewControllerSegue* rvc_segue, UIViewController* svc, UIViewController* dvc) {
+            
+            UINavigationController* navController = (UINavigationController*)self.revealViewController.frontViewController;
+            [navController setViewControllers: @[dvc] animated: NO ];
+            [self.revealViewController setFrontViewPosition: FrontViewPositionLeft animated: YES];
+        };
+        
+    }
+    
 }
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

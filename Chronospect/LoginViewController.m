@@ -33,11 +33,10 @@
                                                                [UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue:245.0/255.0 alpha:1.0], NSForegroundColorAttributeName,
                                                                shadow, NSShadowAttributeName,
                                                                [UIFont fontWithName:@"Helvetica Neue" size:21.0], NSFontAttributeName, nil]];
-        // self.navigationController.navigationBar.barTintColor = [UIColor blueColor];
-        //[self.navigationController.navigationBar setBarStyle:UIBarStyleBlackTranslucent];
         [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
         
     }
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -57,13 +56,19 @@
                         
                     } else {
                         // The login failed. Check error to see why.
-                        [self logUserIn];
+                        [self showAlert:[error userInfo][@"error"] title:@"Error"];
                     }
                 }];
 }
 
 - (void)logUserIn{
     [self performSegueWithIdentifier:@"login" sender:self];
+}
+
+- (void)showAlert:(NSString *)message title:(NSString *)title {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title message:message delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+    alert.alertViewStyle = UIAlertViewStyleDefault;
+    [alert show];
 }
 
 // Methods for hiding keyboard
@@ -80,7 +85,7 @@
     const char *cStr = [string UTF8String];
     unsigned char digest[16];
     
-    CC_MD5( cStr, strlen(cStr), digest ); // This is the md5 call
+    CC_MD5( cStr, (u_int32_t)strlen(cStr), digest ); // This is the md5 call
     
     NSMutableString *resultString = [NSMutableString stringWithCapacity:CC_MD5_DIGEST_LENGTH * 2];
     
