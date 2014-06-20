@@ -8,7 +8,6 @@
 
 #import "FindFriendsTableViewController.h"
 #import <Parse/Parse.h>
-#import <PPRevealSideViewController/PPRevealSideViewController.h>
 #import "FriendCell.h"
 #import "ProfileViewController.h"
 #import "SWRevealViewController.h"

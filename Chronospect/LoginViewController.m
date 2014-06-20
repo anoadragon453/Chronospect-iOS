@@ -37,6 +37,9 @@
         
     }
     
+    // Change keyboard to dark theme
+    _usernameField.keyboardAppearance = UIKeyboardAppearanceAlert;
+    _passwordField.keyboardAppearance = UIKeyboardAppearanceAlert;
 }
 
 - (void)didReceiveMemoryWarning

@@ -7,9 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <PPRevealSideViewController/PPRevealSideViewController.h>
 
 @interface GetStartedViewController : UIViewController
-- (IBAction)popOutPressed:(id)sender;
 
 @end

@@ -8,7 +8,6 @@
 
 #import "SlideNavigationTableViewController.h"
 #import "SlideNavigationTableViewCell.h"
-#import <PPRevealSideViewController/PPRevealSideViewController.h>
 #import "RegisterViewController.h"
 #import "SWRevealViewController.h"
 
