@@ -13,5 +13,4 @@
 @property (strong, nonatomic) IBOutlet UILabel *friendLocation;
 @property (strong, nonatomic) IBOutlet UIImageView *friendImage;
 
-
 @end

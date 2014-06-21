@@ -11,6 +11,7 @@
 #import "FriendCell.h"
 #import "ProfileViewController.h"
 #import "SWRevealViewController.h"
+#import "MessagingViewController.h"
 
 @interface FindFriendsTableViewController ()
 
@@ -87,8 +88,11 @@ ProfileViewController *profileVC;
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     FriendCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-    
+
     PFObject *friend = [friendsArray objectAtIndex:indexPath.row];
+    /*if ([friend[@"username"] isEqualToString:[[PFUser currentUser] username]]) {
+        friend = [friendsArray objectAtIndex:indexPath.row + 1];
+    }*/
     cell.friendName.text = friend[@"username"];
     
     if (!friend[@"location"]) {
@@ -114,9 +118,6 @@ ProfileViewController *profileVC;
      profileVC = [[ProfileViewController alloc] init];
      
      [profileVC setUsername:usernameOfProfileToView];
-     
-     //[self.navigationController pushViewController:profileVC animated:YES];
-     [self presentModalViewController:profileVC animated:YES];
  }
 
 -(void)getListOfFriends {
@@ -147,6 +148,17 @@ ProfileViewController *profileVC;
 -(void) refreshInvoked:(id)sender forState:(UIControlState)state {
     [friendsArray removeAllObjects];
     [self getListOfFriends];
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([segue.identifier isEqualToString:@"showMessaging"]){
+        NSIndexPath *indexPath = [[self tableView] indexPathForSelectedRow];
+        NSLog(@"selected row is %d", indexPath.row);
+        MessagingViewController *controller = (MessagingViewController *)segue.destinationViewController;
+        PFObject *friend = [friendsArray objectAtIndex:indexPath.row];
+        [controller setRemoteUser:friend[@"username"]];
+        NSLog(@"Remote user is: %@", friend[@"username"]);
+    }
 }
 
 @end

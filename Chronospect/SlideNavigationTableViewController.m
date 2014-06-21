@@ -104,7 +104,7 @@ NSArray *cellIdentifiers;
     [self.revealSideViewController popViewControllerWithNewCenterController:n animated:YES];
 }*/
 
-- (void) prepareForSegue: (UIStoryboardSegue *) segue sender: (id) sender
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     // Set the title of navigation bar
     NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];

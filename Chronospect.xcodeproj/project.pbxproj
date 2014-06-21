@@ -48,6 +48,9 @@
 		495CEDD019295FF200315CF7 /* chronospect.png in Resources */ = {isa = PBXBuildFile; fileRef = 495CEDCF19295FF200315CF7 /* chronospect.png */; };
 		498191D31950FF74002FDEA6 /* FindFriendsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 498191D21950FF74002FDEA6 /* FindFriendsTableViewController.m */; };
 		498191D61951033A002FDEA6 /* FriendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 498191D51951033A002FDEA6 /* FriendCell.m */; };
+		499B42D41954271D000EC20A /* chat.png in Resources */ = {isa = PBXBuildFile; fileRef = 499B42D31954271D000EC20A /* chat.png */; };
+		499B42D8195512C2000EC20A /* MessagingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 499B42D7195512C2000EC20A /* MessagingViewController.m */; };
+		499B42DB195512E1000EC20A /* MessagingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 499B42DA195512E1000EC20A /* MessagingTableViewCell.m */; };
 		49A22DCD193ECBD4007DF3B3 /* PostDescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A22DCC193ECBD4007DF3B3 /* PostDescriptionViewController.m */; };
 		49A22DCF193ECEB9007DF3B3 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A22DCE193ECEB9007DF3B3 /* GoogleMaps.framework */; };
 		49A22DD6193ECF34007DF3B3 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 49A22DD5193ECF34007DF3B3 /* GoogleMaps.bundle */; };
@@ -144,6 +147,11 @@
 		498191D21950FF74002FDEA6 /* FindFriendsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindFriendsTableViewController.m; sourceTree = "<group>"; };
 		498191D41951033A002FDEA6 /* FriendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendCell.h; sourceTree = "<group>"; };
 		498191D51951033A002FDEA6 /* FriendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendCell.m; sourceTree = "<group>"; };
+		499B42D31954271D000EC20A /* chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chat.png; sourceTree = "<group>"; };
+		499B42D6195512C2000EC20A /* MessagingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagingViewController.h; sourceTree = "<group>"; };
+		499B42D7195512C2000EC20A /* MessagingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagingViewController.m; sourceTree = "<group>"; };
+		499B42D9195512E1000EC20A /* MessagingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagingTableViewCell.h; sourceTree = "<group>"; };
+		499B42DA195512E1000EC20A /* MessagingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagingTableViewCell.m; sourceTree = "<group>"; };
 		49A22DCB193ECBD4007DF3B3 /* PostDescriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostDescriptionViewController.h; sourceTree = "<group>"; };
 		49A22DCC193ECBD4007DF3B3 /* PostDescriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostDescriptionViewController.m; sourceTree = "<group>"; };
 		49A22DCE193ECEB9007DF3B3 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
@@ -301,6 +309,8 @@
 				490C8AA71929EB5D000E396E /* SlideNavigationTableViewController.m */,
 				498191D11950FF74002FDEA6 /* FindFriendsTableViewController.h */,
 				498191D21950FF74002FDEA6 /* FindFriendsTableViewController.m */,
+				499B42D6195512C2000EC20A /* MessagingViewController.h */,
+				499B42D7195512C2000EC20A /* MessagingViewController.m */,
 				491678D81953EAB20077D222 /* MainNavigationViewController.h */,
 				491678D91953EAB20077D222 /* MainNavigationViewController.m */,
 				4916786B1953D8730077D222 /* ProfileViewController.h */,
@@ -325,6 +335,8 @@
 				49CEFC8D192E7CEC000C91B8 /* SlideNavigationTableViewCell.m */,
 				498191D41951033A002FDEA6 /* FriendCell.h */,
 				498191D51951033A002FDEA6 /* FriendCell.m */,
+				499B42D9195512E1000EC20A /* MessagingTableViewCell.h */,
+				499B42DA195512E1000EC20A /* MessagingTableViewCell.m */,
 				495CEDBD19295E6E00315CF7 /* Resources */,
 				495CED8D1929513E00315CF7 /* Supporting Files */,
 			);
@@ -375,6 +387,7 @@
 		495CEDBE19295E7600315CF7 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				499B42D31954271D000EC20A /* chat.png */,
 				49B81F2A19316FC2005265E7 /* wall.png */,
 				49B81F2819316F5F005265E7 /* info.png */,
 				49B81F2619316F36005265E7 /* invites.png */,
@@ -477,6 +490,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				499B42D41954271D000EC20A /* chat.png in Resources */,
 				49DD094F19540F2F0066160F /* menu@2x.png in Resources */,
 				49A22DD6193ECF34007DF3B3 /* GoogleMaps.bundle in Resources */,
 				49B81F2919316F5F005265E7 /* info.png in Resources */,
@@ -513,10 +527,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				495CED9D1929513F00315CF7 /* LoginViewController.m in Sources */,
+				499B42DB195512E1000EC20A /* MessagingTableViewCell.m in Sources */,
 				495CED971929513E00315CF7 /* AppDelegate.m in Sources */,
 				491678D51953E59F0077D222 /* SWRevealViewController.m in Sources */,
 				49A22DE9193ED018007DF3B3 /* PostLocationViewController.m in Sources */,
 				49CEFC8E192E7CEC000C91B8 /* SlideNavigationTableViewCell.m in Sources */,
+				499B42D8195512C2000EC20A /* MessagingViewController.m in Sources */,
 				494C0A8519541BFA00D2A76B /* InvitesViewController.m in Sources */,
 				4916786D1953D8730077D222 /* ProfileViewController.m in Sources */,
 				49A22DCD193ECBD4007DF3B3 /* PostDescriptionViewController.m in Sources */,
@@ -663,7 +679,6 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					/Users/andrew/Documents/FacebookSDK,
-					"$(PROJECT_DIR)/Pods",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Chronospect/Chronospect-Prefix.pch";
@@ -691,7 +706,6 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					/Users/andrew/Documents/FacebookSDK,
-					"$(PROJECT_DIR)/Pods",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Chronospect/Chronospect-Prefix.pch";
